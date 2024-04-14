@@ -39,3 +39,14 @@ variable "desired_size" {
   description = "Desired size of worker nodes"
   
 }
+
+variable "private_subnets" {
+  default = ["10.0.1.0/24", "10.0.2.0/24"]
+  description = "Private Subnetes CIDR"
+}
+
+variable "public_subnets" {
+  default = ["10.0.4.0/24", "10.0.5.0/24"]
+  description = "Public Subnetes CIDR"
+  
+}
