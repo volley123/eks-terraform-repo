@@ -19,7 +19,7 @@ variable "ami_type" {
 }
 
 variable "instance_types" {
-  default = "t3.medium"
+  default = ["t3.medium"]
   description = "Instance type"
   
 }
